@@ -26,10 +26,11 @@ Unity: (build) -> Solution: Nuget インストール, Solution: コメントア�
 なるので、Unityのビルド時は、このコードは無視する必要があります。最初は `if UNITY_EDITOR`などプリプロセッサを設定したり、[グローバルで`Assets/mcs.rsp` を設定する](https://docs.unity3d.com/ja/current/Manual/PlatformDependentCompilation.html)などの方法も試しましたが、ビルドにはなぜか有効にならず、、、結局、なんと、該当箇所をビルド時にはコメント
 アウトするしかないという２日間のハックでは結論です。もっといい方法があれば教えてください。
 
-ちなみにこのサンプルでは、下記の部分の、
+ちなみにこのサンプルでは、下記の部分の部分をUnityビルド後にコメントアウトしてください。
 
 ```
 //#if !UNITY_BUILD
+//#endif
 ```
 
 ## 3. たまに出るエラー
