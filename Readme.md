@@ -33,6 +33,10 @@ Unity: (build) -> Solution: Nuget インストール, Solution: コメントア�
 //#endif
 ```
 
+こちらと接続できるサーバーは、こちらのリポジトリのサーバーが使えます。
+
+[floatinghotpot/socket.io-unity](https://github.com/floatinghotpot/socket.io-unity/tree/master/Demo/test-server)
+
 ## 3. たまに出るエラー
 
 このエラーに出会って、相当はまりました。Web を検索しても対策はまちまちで、論理的な解決策はありませんでした。[こんなブログ](http://blog.roy29fuku.com/virtual-reality/hololens/error-list/)を書いている人もいました。
